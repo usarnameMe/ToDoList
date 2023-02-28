@@ -1,3 +1,18 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Container */
+
 #container {
   margin: 0 auto;
   max-width: 600px;
@@ -7,11 +22,15 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Header */
+
 #header {
   text-align: center;
   font-size: 36px;
   margin-bottom: 20px;
 }
+
+/* Input Container */
 
 #input-container {
   display: flex;
@@ -36,6 +55,8 @@
   margin-left: 10px;
 }
 
+/* Lists */
+
 #lists {
   margin-top: 20px;
 }
@@ -54,25 +75,53 @@
   margin-right: 10px;
 }
 
-#done {
+.done,
+.dlt {
   padding: 10px;
-  background-color: #008000;
-  color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 
-#dlt {
-  padding: 10px;
+.done {
+  background-color: #008000;
+  color: #fff;
+}
+
+.done:hover {
+  background-color: #006600;
+}
+
+.dlt {
   background-color: #ff0000;
   color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+}
+
+.dlt:hover {
+  background-color: #cc0000;
 }
 
 .task {
   text-align: start;
+}
+
+/* Completed List */
+
+#completed {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+}
+
+#compitedItems {
+  margin-bottom: 10px;
+}
+
+#complitedItem {
+  margin-top: 0;
 }
